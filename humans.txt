@@ -1,0 +1,8 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Stephen Fairbanks - ghosthorses.co.uk
+
+# THANKS
+    HTML5 Boilerplate
