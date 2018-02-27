@@ -53,30 +53,55 @@ html {
    Author's custom styles
    ========================================================================== */
 
-body,
-html {
+body {
     align-items: center;
+    background: #222 url(../img/anxiety.svg) no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     font-family: Questrial, sans-serif;
+    justify-content: center;
     line-height: 1;
     min-height: 100vh;
     padding: 0 2rem;
     text-align: center;
 }
 
+body.hovered {
+    background: #333 url(../img/anxiety.svg) no-repeat;
+    background-size: cover;
+}
+
 h1 {
+    color: #fff;
     font-size: 8vw;
-    letter-spacing: 0.1vw;
+    letter-spacing: 0.15vw;
 }
 
 h1 > span {
     position: relative;
+    opacity: 0.25;
+}
+
+#findout {
+    background: #222;
+    border: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+#findout:hover {
+    background: #fff;
+    color: #222;
+    cursor: pointer;
 }
 
 footer {
     bottom: 0;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 0, 0.25);
     font-size: 10px;
     letter-spacing: 1vw;
     padding: 1rem;
@@ -84,7 +109,6 @@ footer {
     text-transform: uppercase;
     width: 100%;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -181,9 +205,9 @@ footer {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
