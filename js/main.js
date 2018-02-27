@@ -17,6 +17,7 @@ animateArray.map((letter, index) => {
             { transform: 'translateY(0)', opacity: 0.5 },
         ], {
             duration: 3000,
+            delay: index * 100,
             iterations: Infinity
         }
     )
