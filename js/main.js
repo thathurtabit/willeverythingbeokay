@@ -28,13 +28,17 @@ animateArray.map((letter, index) => {
     )
 })
 
+let buttonHovered = false;
+
+let bgToggle = setInterval(() => {
+    if (buttonHovered) body.classList.toggle('hovered');
+}, 10);
 
 button.addEventListener('mouseover', () => {
-    let bgToggle = setInterval(() => {
-        body.classList.toggle('hovered');
-    }, 10);
+    buttonHovered = true;
 });
 
 button.addEventListener('mouseout', () => {
-   window.clearInterval(bgToggle);
+    buttonHovered = false;
+    body.classList.remove('hovered');
 });

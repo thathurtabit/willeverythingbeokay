@@ -55,7 +55,8 @@ html {
 
 body {
     align-items: center;
-    background: #222 url(../img/anxiety.svg) no-repeat;
+    background: #222;
+    background-image: none;
     background-size: cover;
     display: flex;
     flex-direction: column;
